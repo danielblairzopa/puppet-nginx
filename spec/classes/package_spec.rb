@@ -69,7 +69,7 @@ describe 'nginx::package' do
       it { should contain_package('nginx') }
       it { should contain_package('passenger') }
       it { should contain_apt__source('nginx').with(
-        'location'   => 'https://oss-binaries.phusionpassenger.com/apt/passenger',
+        'location'   => 'https://oss-binaries.phusionpassenger.com/apt/passenger/4',
         'repos'      => "main",
         'key'        => '561F9B9CAC40B2F7',
         'key_source' => 'https://oss-binaries.phusionpassenger.com/auto-software-signing-gpg-key.txt'
